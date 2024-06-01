@@ -1,0 +1,45 @@
+.contactCard {
+    height: 15%;
+    width: 50%;
+    border: 2px solid #CCA43B !important;
+    border-radius: 30px;
+    border-color: #CCA43B !important;
+    border-width: 2px;
+    border-bottom: 2px solid #CCA43B !important;
+    margin-bottom: 100px;
+  }
+  
+  .contactCol {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contactRow {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .no-underline {
+    text-decoration: none;
+  }
+
+  .contactText{
+    margin-left: 5px;
+    margin-top: 8px;
+    color:black;
+  }
+
+  .contactTextEmail{
+    margin-left: 8px;
+    margin-top: 8px;
+    color:black;
+  }
+
+  .hover-effect:hover .landingIcon, 
+  .hover-effect:hover .contactText,
+  .hover-effect:hover .contactTextEmail{
+    color:#CCA43B; /* new color on hover */
+  }

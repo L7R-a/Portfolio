@@ -1,0 +1,71 @@
+.TopAbout{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:20%;
+}
+
+.TopText{
+    text-align: center;
+}
+
+.firstLineAbout{
+    font-weight:100;
+    font-size: large; 
+    color: gray; 
+}
+
+.secondLineAbout {
+    font-weight: bold;
+}
+
+.BottomAbout{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:80%;
+    /* background-color: orange; */
+}
+
+.leftColAbout{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    /* background-color: yellow; */
+}
+.rightColAbout{
+    height:100%;
+    /* background-color: red; */
+}
+
+.aboutCards {
+    border: 2px solid #CCA43B !important;
+    text-align: center;
+    border-radius: 30px;
+    border-color: #CCA43B !important;
+    border-width: 2px;
+    border-bottom: 2px solid #CCA43B !important;
+  }
+
+.aboutMeInfo{
+    font-family: "Poppins", sans-serif;
+
+    font-size: large;
+    color:black;    
+    /* margin-top: 3%; */
+}
+
+.cardTitle {
+    color: #363636; 
+    font-weight: bold;
+}
+
+
+.infoRow{
+    margin-top: 3%;
+    height: 35vh;
+    overflow-y: auto; 
+}
+
+

@@ -1,0 +1,110 @@
+.projectCard {
+    border: 2px solid #CCA43B !important;
+    text-align: center;
+    border-radius: 30px;
+    border-color: #CCA43B !important;
+    border-width: 2px;
+    border-bottom: 2px solid #CCA43B !important;
+    padding:25px;
+    height: 100%;
+  }
+
+  .projectCard:hover{
+    background-color: #363636;
+    color:white;
+  }
+
+  .projectCard:hover .card-subtitle{
+    color:#CCA43B !important;
+  
+  }
+
+  .imageProject{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 30px; 
+}
+
+.paddingRow{
+  padding-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.32%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 30px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.videoRow{
+  margin-left: 5%;
+}
+
+.projectCardDescription {
+  display: flex;
+  height: 100%;
+  border: 2px solid #CCA43B !important;
+  border-radius: 30px;
+  border-color: #CCA43B !important;
+  border-width: 2px;
+  border-bottom: 2px solid #CCA43B !important;
+  width: 80%;
+  margin-bottom: 20px; 
+  margin-left: 10%;
+}
+
+.projectCardDescription .list-group {
+  border: none !important;
+}
+
+.projectCardDescription .cardTitle {
+  text-align: center;
+}
+
+.projectOtherCardDescription {
+  display: flex;
+  height: 100%;
+  border: 2px solid #CCA43B !important;
+  border-radius: 30px;
+  border-color: #CCA43B !important;
+  border-width: 2px;
+  border-bottom: 2px solid #CCA43B !important;
+  width: 80%;
+  margin-bottom: 20px; /* Add some spacing between cards */
+  margin-left: 10%;
+}
+
+.capstoneCardDescription {
+  display: flex;
+  height: 100%;
+  border: 2px solid #CCA43B !important;
+  border-radius: 30px;
+  border-color: #CCA43B !important;
+  border-width: 2px;
+  border-bottom: 2px solid #CCA43B !important;
+  width: 50%;
+  margin-bottom: 20px; 
+}
+
+.scrollable-column {
+  height: 70vh;
+  overflow-y: auto; 
+}
+
+.scrollable-row{
+  height: 40vh;
+  overflow-y: auto; 
+}

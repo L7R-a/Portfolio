@@ -1,0 +1,29 @@
+.experienceCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    border: 2px solid #CCA43B !important;
+    border-radius: 30px;
+    border-color: #CCA43B !important;
+    border-width: 2px;
+    border-bottom: 2px solid #CCA43B !important;
+}
+
+.experienceCard .list-group {
+    border: none !important;
+}
+
+.experienceCard .cardTitle {
+    text-align: center;
+}
+
+.list-group-item-no-border {
+    align-items: center;
+    border-radius: 10px;
+    border: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    
+}
