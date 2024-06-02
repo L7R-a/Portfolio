@@ -72,7 +72,7 @@ const WebProjects = () => {
                 </a>
               </Col>
               <Col>
-              <a href="/Portfolio" rel="noopener noreferrer" className="no-underline">
+              <a href="/PortfolioApp" rel="noopener noreferrer" className="no-underline">
                 <Card className="projectCard">
                   <Card.Img className="imageProject" variant="top" src={ThisWebP} />
                   <Card.Body>

@@ -19,7 +19,7 @@ import GameJam from "./GameJam"
 import WebProjects from "./WebProjects";
 import VirtualVogue from "./VirtualVogue";
 import ContactManager from "./ContactManager";
-import Portfolio from "./Portfolio"
+import PortfolioApp from "./PortfolioApp"
 import VRProjects from "./VRProjects";
 import OtherProjects from "./OtherProjects";
 import GraphProblem from "./GraphProblem";
@@ -49,7 +49,7 @@ function App() {
         <Route path="/WebProjects" element={<WebProjects/>} />
         <Route path="/VirtualVogue" element={<VirtualVogue/>} />
         <Route path="/ContactManager" element={<ContactManager/>} />
-        <Route path="/Portfolio" element={<Portfolio/>} />
+        <Route path="/PortfolioApp" element={<PortfolioApp/>} />
         <Route path="/Capstone" element={<Capstone/>} />
         <Route path="/OtherProjects" element={<OtherProjects/>} />
         <Route path="/GraphProblem" element={<GraphProblem/>} />

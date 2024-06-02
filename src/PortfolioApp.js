@@ -2,7 +2,7 @@ import React from "react";
 import OtherProjectDisplay from "./OtherProjectDisplay";
 
 
-const Portfolio = ({title, subtitle, githubLink, storyText, challenges, learningText,}) => {
+const PortfolioApp = ({title, subtitle, githubLink, storyText, challenges, learningText,}) => {
     return(
 
         <OtherProjectDisplay
@@ -36,4 +36,4 @@ const Portfolio = ({title, subtitle, githubLink, storyText, challenges, learning
 
 };
 
-export default Portfolio
+export default PortfolioApp
