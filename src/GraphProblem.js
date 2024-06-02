@@ -16,10 +16,10 @@ const GraphProblem = ({title, subtitle, githubLink, storyText, challenges, learn
       {[
         {
           challenge: [
-            "Create the disjoint set class and buildRailroad method"
+            "Create the disjoint set class and buildRailroad method."
           ],
           solution:[
-            "Once I understood that in Kruskal algorithm the disjoint class was there to detect possible cycles and merge the vertices sets, I was able to implement that class and afterwards I knew how I needed to use it inside the buildRoad method"
+            "Once I understood that in Kruskal algorithm the disjoint class was there to detect possible cycles and merge the vertices sets, I was able to implement that class and afterwards I knew how I needed to use it inside the buildRoad method."
           ]
         }
         

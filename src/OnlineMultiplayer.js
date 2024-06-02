@@ -55,7 +55,7 @@ const OnlineMultiplayer = () => {
         {
           title: "Shotgun bullets",
           challenge: [
-            "Applying damage from the shotgun was hard because this was the only weapon that shoots multiple bullets at once, meaning that all bullets needed to check specifically what players got hit and where many times at once. Even with a tutorial it was hard to get it right"
+            "Applying damage from the shotgun was hard because this was the only weapon that shoots multiple bullets at once, meaning that all bullets needed to check specifically what players got hit and where many times at once. Even with a tutorial it was hard to get it right."
           ],
           solution:[
             " Adding multiple TArrays and TMaps that would store the characters that got hit and where to then distribute the damage using multiple for loops. "
