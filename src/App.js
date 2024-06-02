@@ -33,7 +33,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/portfolio" element={<LandingPage />} />
         <Route path="/Experience" element={<Experience />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
