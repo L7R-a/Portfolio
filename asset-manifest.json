@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d989afc4.css",
+    "main.js": "/portfolio/static/js/main.0a89fe1a.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/singlePlayerPic.png": "/portfolio/static/media/singlePlayerPic.40411f6ae0925e9cde2e.png",
+    "static/media/onlinepic.png": "/portfolio/static/media/onlinepic.1d0751e4c53e5aa54a97.png",
+    "static/media/GameP.png": "/portfolio/static/media/GameP.1e58ab51b31dab63c184.png",
+    "static/media/AboutPic.jpg": "/portfolio/static/media/AboutPic.d03d4b1a68e62e369981.jpg",
+    "static/media/VRP.png": "/portfolio/static/media/VRP.f01973fef826337015ae.png",
+    "static/media/Picture1.png": "/portfolio/static/media/Picture1.eff1039a313d33b49ebb.png",
+    "static/media/TankPic.png": "/portfolio/static/media/TankPic.3fce1509d90189d64bca.png",
+    "static/media/ThisWebPic.png": "/portfolio/static/media/ThisWebPic.87d8872881cc6fe54be9.png",
+    "static/media/CapstoneP.png": "/portfolio/static/media/CapstoneP.c15e6b66071dd6f6bb35.png",
+    "static/media/FirstgamePic.png": "/portfolio/static/media/FirstgamePic.e21e2039d5d7f1456634.png",
+    "static/media/WebPic.png": "/portfolio/static/media/WebPic.9f57747fc212e206ba72.png",
+    "static/media/RPGGamePic.png": "/portfolio/static/media/RPGGamePic.1878344fe31e58e39ea6.png",
+    "static/media/VMPic.png": "/portfolio/static/media/VMPic.ee6aa4368a98c511171d.png",
+    "static/media/VVPic.png": "/portfolio/static/media/VVPic.64e2de297c6392e8a05e.png",
+    "static/media/SchedulesPic.png": "/portfolio/static/media/SchedulesPic.97cb7ec7f298cc058e4f.png",
+    "static/media/OtherP.png": "/portfolio/static/media/OtherP.1b602d8a8ca57cbb1c7b.png",
+    "static/media/gameJamPic.png": "/portfolio/static/media/gameJamPic.c54890f352e1f757b669.png",
+    "static/media/GraphPic.png": "/portfolio/static/media/GraphPic.dec5188c02d7fdc8d069.png",
+    "static/media/WebsiteP.png": "/portfolio/static/media/WebsiteP.bf4e5e85e9fc1542fa72.png",
+    "index.html": "/portfolio/index.html",
+    "main.d989afc4.css.map": "/portfolio/static/css/main.d989afc4.css.map",
+    "main.0a89fe1a.js.map": "/portfolio/static/js/main.0a89fe1a.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d989afc4.css",
+    "static/js/main.0a89fe1a.js"
+  ]
+}
