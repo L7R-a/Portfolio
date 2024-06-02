@@ -33,7 +33,7 @@ const LandingPage = () => {
               <Nav.Link href="/portfolio">Home</Nav.Link>
 
                 <Nav.Link href="/About">About Me</Nav.Link>
-                <Nav.Link href="/portfolio/Experience">Experience</Nav.Link>
+                <Nav.Link href="/Experience">Experience</Nav.Link>
                 <Nav.Link href="/Projects">Projects</Nav.Link>
                 <Nav.Link href="/Contact">Contact</Nav.Link>
               </Nav>
