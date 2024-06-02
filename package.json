@@ -1,4 +1,5 @@
 {
+  "homepage": "https://L7R-a.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -40,7 +41,10 @@
     ]
   },
   "engines": {
-    "node" : "v20.11.1",
-    "npm" : "10.4.0"
+    "node": "v20.11.1",
+    "npm": "10.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
