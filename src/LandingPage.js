@@ -73,7 +73,7 @@ const LandingPage = () => {
                 <FaGithub className="landingIcon" size={48} />
               </a>
 
-              <a href="https://www.linkedin.com/in/diego-la-rosa-684665291/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/diego-la-rosa/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="landingIcon" size={48} />
               </a>
             </h2>

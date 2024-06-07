@@ -58,7 +58,7 @@ const Contact = () => {
               </Col>
               <Col md={4} className="contactCol">
                 <div className="d-flex align-items-center hover-effect">
-                  <a href="https://www.linkedin.com/in/diego-la-rosa-684665291/" target="_blank" rel="noopener noreferrer" className="no-underline d-flex align-items-center">
+                  <a href="https://www.linkedin.com/in/diego-la-rosa/" target="_blank" rel="noopener noreferrer" className="no-underline d-flex align-items-center">
                     <FaLinkedin className="landingIcon" size={32} />
                     <h4 className="contactText">
                       LinkedIn

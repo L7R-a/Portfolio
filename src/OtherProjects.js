@@ -9,9 +9,10 @@ import {
 } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import "./Projects.css";
-import GraphP from "./Images/GraphPic.png";
+import GraphP from "./Images/RailroadsPic.png";
 import ScheduleP from "./Images/SchedulesPic.png";
 import VMP from "./Images/VMPic.png";
+import BKP from "./Images/MazePic.png";
 
 const OtherProjects = () => {
   return (
@@ -49,8 +50,19 @@ const OtherProjects = () => {
                 <Card className="projectCard text-center">
                   <Card.Img className="imageProject" variant="top" src={GraphP} />
                   <Card.Body>
-                    <Card.Title>Graph Problem</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(Applying Kruskal Algorithm)</Card.Subtitle>
+                    <Card.Title>Kruskal Algorithm</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Train Railroads (Java)</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/Backtracking" className="no-underline">
+                <Card className="projectCard text-center">
+                  <Card.Img className="imageProject" variant="top" src={BKP} />
+                  <Card.Body>
+                    <Card.Title>Backtracking Algorithm</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Magic Maze (Java)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>
@@ -60,8 +72,8 @@ const OtherProjects = () => {
                 <Card className="projectCard">
                   <Card.Img className="imageProject" variant="top" src={ScheduleP} />
                   <Card.Body>
-                    <Card.Title>Schedules</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(Applying OOP Principles)</Card.Subtitle>
+                    <Card.Title>Object Oriented Programming</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Schedules (Java)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>
@@ -71,8 +83,8 @@ const OtherProjects = () => {
                 <Card className="projectCard">
                   <Card.Img className="imageProject" variant="top" src={VMP} />
                   <Card.Body>
-                    <Card.Title>Tiny Virtual Machine</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(Virtual Simulation of The Harvard Architecture)</Card.Subtitle>
+                    <Card.Title>Computer Logic & Organization</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Tiny Harvard Virtual Machine (C)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>

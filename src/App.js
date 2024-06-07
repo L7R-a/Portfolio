@@ -18,6 +18,7 @@ import PortfolioApp from "./PortfolioApp";
 import VRProjects from "./VRProjects";
 import OtherProjects from "./OtherProjects";
 import GraphProblem from "./GraphProblem";
+import Backtracking from "./Backtracking";
 import Schedules from "./Schedules";
 import VM from "./VM";
 import Contact from "./Contact";
@@ -48,6 +49,7 @@ function App() {
         <Route path="/Capstone" element={<Capstone />} />
         <Route path="/OtherProjects" element={<OtherProjects />} />
         <Route path="/GraphProblem" element={<GraphProblem />} />
+        <Route path="/Backtracking" element={<Backtracking/>} />
         <Route path="/VM" element={<VM />} />
         <Route path="/Schedules" element={<Schedules />} />
       </Routes>

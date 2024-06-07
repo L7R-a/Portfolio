@@ -9,8 +9,9 @@ const RPG = () => {
         videoSrc="https://www.youtube.com/embed/lFep0d5Aa_o"
         githubLink="https://github.com/L7R-a/AI-Videogame"
         downloadLink="https://drive.google.com/drive/folders/1hOAaPn5srSPBzYndACkw2haWviQZEGuk?usp=drive_link"
-        storyText={["This project, a fantasy RPG by turns, was a group project from one of my university's courses. I choose this course because I only had experience in Unreal Engine and not Unity, so I considered a good chance to learn it as well as C#. ", 
-        "My role in this project was to do the character movement, enemy AI, the movement of both enemies and playable characters, animations and some designing, combat system, link all the scenes together, implement the dialog mechanic of the game, and test all the game. In the other hand, my teammates created the story, most of the design, the UI, and the special effects.",
+        storyText={[
+          "This project, a fantasy RPG by turns, was a group project from one of my university's courses. I choose this course because I only had experience in Unreal Engine and not Unity, so I considered a good chance to learn it as well as C#. ", 
+        "My role in this project was to do the character movement, enemy AI, the movement of both enemies and playable characters, animations, combat system, link all the scenes together, implement the dialog mechanic of the game, some designing, and test all the game. In the other hand, my teammates created the story, most of the design, the UI, and the special effects.",
         "Aside from my participation in coding, I would also say that I had to be the leader of the team throughout the project, keeping an eye on everybody's work, helping debugging issues with the UI and design, helping in the slides presentation, and scheduling the group meetings.",
         "In the end, this project made me realize the challenges and advantages that is making a game project with other people people and that Unreal Engine and Unity are very similar engines overall, making it easy to learn Unity by myself. This project left me confident with my experience with Unity and prepared for the Game Jam that I would participate later on."]}
         const learningText = {[

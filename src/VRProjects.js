@@ -10,7 +10,7 @@ const VRProjects = () => {
       storyText={["This VR demostration, a classroom with a classmate, was a long project for one of my elective courses in my university. The application is using Unity as the engine, its XR framework, and a XR simulation toolkit to simulate the usage of a VR headset inside the editor.",
                   "The purpose of this project is to apply in Unity the fundamentals that are needed for VR applications to be successful such as cohesive environment, travel, interaction, physics, agents, animations, and UI. For each one of those principles I was required to make a video for the project and explain how I implemented all those features",
                   "This project have me a solid understanding of how to implement VR functionality to games and all the challenges that it involves. It left me ready to work on any video game that plans to use any VR in it.  ",
-                  "NOTE: The video on the left is the last video of the project, but the link below will open youtube with a playlist with all the other videos.",
+                  "NOTE: The video on the left is the last video of the project, but the link below will open Youtube with a playlist with all the other videos.",
                   "https://www.youtube.com/playlist?list=PL3iIJSj1QvkGpFa6T8VCH-aWmwKHdwLh7"
 
       ]}
