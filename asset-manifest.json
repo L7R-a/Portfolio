@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d989afc4.css",
-    "main.js": "/portfolio/static/js/main.d9b95fac.js",
+    "main.js": "/portfolio/static/js/main.95aac825.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/singlePlayerPic.png": "/portfolio/static/media/singlePlayerPic.40411f6ae0925e9cde2e.png",
     "static/media/onlinepic.png": "/portfolio/static/media/onlinepic.1d0751e4c53e5aa54a97.png",
@@ -21,15 +21,16 @@
     "static/media/RailroadsPic.png": "/portfolio/static/media/RailroadsPic.b333315b9012a3c26b70.png",
     "static/media/SchedulesPic.png": "/portfolio/static/media/SchedulesPic.97cb7ec7f298cc058e4f.png",
     "static/media/OtherP.png": "/portfolio/static/media/OtherP.1b602d8a8ca57cbb1c7b.png",
+    "static/media/GuitarP.png": "/portfolio/static/media/GuitarP.75cba629947487d0718f.png",
     "static/media/gameJamPic.png": "/portfolio/static/media/gameJamPic.c54890f352e1f757b669.png",
     "static/media/WebsiteP.png": "/portfolio/static/media/WebsiteP.bf4e5e85e9fc1542fa72.png",
     "index.html": "/portfolio/index.html",
     "main.d989afc4.css.map": "/portfolio/static/css/main.d989afc4.css.map",
-    "main.d9b95fac.js.map": "/portfolio/static/js/main.d9b95fac.js.map",
+    "main.95aac825.js.map": "/portfolio/static/js/main.95aac825.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d989afc4.css",
-    "static/js/main.d9b95fac.js"
+    "static/js/main.95aac825.js"
   ]
 }
