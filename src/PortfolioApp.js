@@ -27,7 +27,7 @@ const PortfolioApp = ({title, subtitle, githubLink, storyText, challenges, learn
       ]}
 
       learningText={[
-            "In this project I reinforced my knowledge in React and Bootstrap and learned how to deploy web applications.",
+            "In this project I reinforced my knowledge in React and Bootstrap and learned how to deploy web applications in GitHub Pages.",
             " Additionally, something very useful that I learned was to efficiently implement and reuse my own components with parameters in projects, something that was very useful to make pages that are similar format but different text content.",
             " Lastly, I also learned that the best way to center a component is to make the display of the parent component be flex and then use the align and justify content center."
       ]}/>

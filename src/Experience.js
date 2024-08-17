@@ -64,6 +64,9 @@ const Experience = () => {
                             <ListGroup.Item className="list-group-item-no-border">
                               <PiSealCheckFill size={24} /> Java
                             </ListGroup.Item>
+                            <ListGroup.Item className="list-group-item-no-border">
+                              <PiSealCheckFill size={24} /> JS
+                            </ListGroup.Item>
                           </ListGroup>
                         </Col>
                         <Col md={6}>
@@ -73,16 +76,13 @@ const Experience = () => {
                               <PiSealCheckFill size={24} /> C#
                             </ListGroup.Item>
                             <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> JS
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
                               <PiSealCheckFill size={24} /> HTML
                             </ListGroup.Item>
                             <ListGroup.Item className="list-group-item-no-border">
                               <PiSealCheckFill size={24} /> CSS
                             </ListGroup.Item>
                             <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> PHP
+                              <PiSealCheckFill size={24} /> SQL
                             </ListGroup.Item>
                           </ListGroup>
                         </Col>
@@ -97,25 +97,34 @@ const Experience = () => {
                       <Row>
                         <ListGroup className="list-group">
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Unreal Engine
+                            <PiSealCheckFill size={24} /> Bootstrap
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Unity
+                            <PiSealCheckFill size={24} /> React.js
+                          </ListGroup.Item>
+                          <ListGroup.Item className="list-group-item-no-border">
+                            <PiSealCheckFill size={24} /> Express.js
+                          </ListGroup.Item>
+                          <ListGroup.Item className="list-group-item-no-border">
+                            <PiSealCheckFill size={24} /> Mocha
+                          </ListGroup.Item>
+                          <ListGroup.Item className="list-group-item-no-border">
+                            <PiSealCheckFill size={24} /> Jest
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
                             <PiSealCheckFill size={24} /> GitHub
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Bootstrap
+                            <PiSealCheckFill size={24} /> Microsoft Azure
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> React
+                            <PiSealCheckFill size={24} /> MySQL
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Eclipse
+                            <PiSealCheckFill size={24} /> Unreal Engine
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Visual Studio
+                            <PiSealCheckFill size={24} /> Unity
                           </ListGroup.Item>
                           <ListGroup.Item className="list-group-item-no-border">
                             <PiSealCheckFill size={24} /> Visual Studio Code

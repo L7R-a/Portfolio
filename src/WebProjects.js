@@ -13,6 +13,7 @@ import LAMPP from "./Images/WebPic.png";
 import MERNP from "./Images/VVPic.png";
 import ThisWebP from "./Images/ThisWebPic.png";
 import CapstoneP from "./Images/CapstoneP.png";
+import GuitarP from "./Images/GuitarP.png";
 
 const WebProjects = () => {
   return (
@@ -45,17 +46,7 @@ const WebProjects = () => {
         </Row>
         <Row className="BottomAbout">
           <Row>
-            <Col>
-              <Link to="/VirtualVogue" className="no-underline">
-                <Card className="projectCard text-center">
-                  <Card.Img className="imageProject" variant="top" src={MERNP} />
-                  <Card.Body>
-                    <Card.Title>Virtual Vogue</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(MERN stack application)</Card.Subtitle>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
+
             <Col>
               <Link to="/ContactManager" className="no-underline">
                 <Card className="projectCard">
@@ -63,6 +54,17 @@ const WebProjects = () => {
                   <Card.Body>
                     <Card.Title>Contact Manager</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">(LAMP stack application)</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/VirtualVogue" className="no-underline">
+                <Card className="projectCard text-center">
+                  <Card.Img className="imageProject" variant="top" src={MERNP} />
+                  <Card.Body>
+                    <Card.Title>Virtual Vogue</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">(MERN stack application)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>
@@ -85,6 +87,17 @@ const WebProjects = () => {
                   <Card.Body>
                     <Card.Title>Network Visualization Analysis</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">(Capstone project)</Card.Subtitle>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </Col>
+            <Col>
+              <Link to="/GuitarEnthusiast" className="no-underline">
+                <Card className="projectCard text-center">
+                  <Card.Img className="imageProject" variant="top" src={GuitarP} />
+                  <Card.Body>
+                    <Card.Title>Guitar Enthusiast</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">(Full-stack application)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>

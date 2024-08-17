@@ -72,7 +72,7 @@ const OtherProjects = () => {
                 <Card className="projectCard">
                   <Card.Img className="imageProject" variant="top" src={ScheduleP} />
                   <Card.Body>
-                    <Card.Title>Object Oriented Programming</Card.Title>
+                    <Card.Title>College Schedule Management System</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">Schedules (Java)</Card.Subtitle>
                   </Card.Body>
                 </Card>

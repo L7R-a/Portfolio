@@ -50,7 +50,7 @@ const Capstone = () => {
                             <p>The goal of this project is to facilitate the research of historians about the relationships that these individuals had with one another by showing these connections and the information that the department have of them in one software.</p>
 
                             <br></br>
-                            <p>We are currently in the planning phase, finalizing the implementation details and selecting development tools. The software is scheduled for completion by November 8th.</p>
+                            <p>We are currently in the development phase. The software is scheduled for completion by November 8th.</p>
                 </Row>
               </Card.Body>
             </Card>

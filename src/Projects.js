@@ -50,7 +50,7 @@ const Projects = () => {
                   <Card.Img className="imageProject" variant="top" src={GameP} />
                   <Card.Body>
                     <Card.Title>Game Development</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(Games made with Unreal Engine and Unity)</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">(Unreal Engine and Unity Games)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>
@@ -61,7 +61,7 @@ const Projects = () => {
                   <Card.Img className="imageProject" variant="top" src={WebP} />
                   <Card.Body>
                     <Card.Title>Web Development</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">(MERN and LAMP stack applications)</Card.Subtitle>
+                    <Card.Subtitle className="mb-2 text-muted">(Full-stack Applications)</Card.Subtitle>
                   </Card.Body>
                 </Card>
               </Link>

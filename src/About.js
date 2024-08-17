@@ -91,10 +91,16 @@ const About = () => {
                   Hello! I’m Diego Armando La Rosa Giraud, a senior undergraduate student at the University of Central Florida, majoring in Computer Science. With a strong passion for full-stack application development, game development, and algorithm design, I am excited to transition into the professional world after my graduation in December 2024.
                 </p>
                 <p className="aboutMeInfo">
-                  In my experience with projects, I break tasks into smaller sub-problems and then combine the solutions to create a cohesive whole. This method allows me to tackle complex challenges systematically and efficiently. If the project is in teams, I often take the lead, guiding the project towards successful completion. I firmly believe that making mistakes is a natural part of the learning process, but failing to learn from those mistakes is not acceptable. This mindset drives me to continually improve and adapt, ensuring that each project is better than the last.
+                    Throughout my projects, I have adapted these key principles:                  
+                  <ul>
+                    <li>Break tasks into smaller sub-problems and then combine the solutions to create a cohesive whole.</li>
+                    <li>Clean code is better than smart complex code.</li>
+                    <li>In team projects, communicate effectively and be the team player that the team needs to succeed.</li>
+                    <li>Making mistakes is a natural part of the learning process, but failing to learn from those mistakes is not acceptable.</li>
+                  </ul>
                 </p>
                 <p className="aboutMeInfo">
-                  In my free time, I like to keep honing my programming skills by participating in Game Jams, Hackathons, and working on side projects such as video games and full-stack applications, which you can find more details about on this website. When I am not coding, I usually spend my time playing video games, playing guitar, or learning Japanese.
+                  In my free time, I like to keep honing my programming skills by working on side projects such as video games and full-stack applications. When I am not coding, I usually spend my time playing video games, playing guitar, or learning Japanese.
                 </p>
                 <p className="aboutMeInfo">
                   As I prepare to graduate, I am excited to start my career in software engineering. I am eager to work in dynamic environments where I can contribute to innovative projects and continue to grow my technical skills. Feel free to reach out to me via email or LinkedIn.

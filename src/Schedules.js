@@ -7,12 +7,12 @@ const Schedules = ({title, subtitle, githubLink, storyText, challenges, learning
 
         <OtherProjectDisplay
         title="Object Oriented Programming"
-        subtitle="Schedules"
+        subtitle="College Schedule Management System"
         githubLink="https://github.com/L7R-a/Schedules"
         storyText={[
           "For my Object-Oriented Programming class, my group undertook a project to develop a scheduling program for a university. The program was designed to create schedules for both students and staff, which included generating IDs, adding or removing courses from their schedules, and printing the finalized schedules.",
           "The requirements were to have an abstract parent class that the students and faculties class would inherit from, be able to read the file with all the courses, verify that there are no schedule conflicts, and use and ArrayList to store all the members in one place to access them.",
-          "This project was pivotal for me, as it solidified my understanding of Object-Oriented Programming, a crucial concept in software development. The skills and knowledge I gained from this project have been very useful in my subsequent projects."
+          "This project was important for me, as it solidified my understanding of Object-Oriented Programming. The skills and knowledge I gained from this project have been very useful in my subsequent projects."
       ]}
       challenges=
       {[

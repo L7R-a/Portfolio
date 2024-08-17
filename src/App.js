@@ -24,6 +24,7 @@ import VM from "./VM";
 import Contact from "./Contact";
 import Capstone from "./Capstone";
 import './App.css';
+import Guitar from "./GuitarEnthusiast";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route path="/Backtracking" element={<Backtracking/>} />
         <Route path="/VM" element={<VM />} />
         <Route path="/Schedules" element={<Schedules />} />
+        <Route path="/GuitarEnthusiast" element={<Guitar />} />
       </Routes>
     </Router>
   );

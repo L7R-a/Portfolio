@@ -28,7 +28,7 @@ const ContactManager = () => {
             "Worked in a LAMP stack development",
             "Used GitHub as source control",
             "Called API endpoints",            
-            "Updated the size of the table dynamically"
+            "Updated the size of the contacts table dynamically"
           ]
         },
         {
