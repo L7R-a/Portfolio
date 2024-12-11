@@ -44,157 +44,147 @@ const Experience = () => {
           </h2>
         </Row>
         <Row className="BottomAbout">
-          <Row>
-            <Col md={12} className="rightColAbout">
-              <Row>
-                <Col md={3}>
-                  <Card className="experienceCard">
-                    <Card.Body>
-                      <Card.Title className="cardTitle">Programming Languages</Card.Title>
-                      <Row>
-                        <Col md={6}>
-                          <p className="cardTitle">Proficient</p>
-                          <ListGroup className="list-group">
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> C++
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> C
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> Java
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> JS
-                            </ListGroup.Item>
-                          </ListGroup>
-                        </Col>
-                        <Col md={6}>
-                          <p className="cardTitle">Intermediate</p>
-                          <ListGroup className="list-group">
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> C#
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> HTML
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> CSS
-                            </ListGroup.Item>
-                            <ListGroup.Item className="list-group-item-no-border">
-                              <PiSealCheckFill size={24} /> SQL
-                            </ListGroup.Item>
-                          </ListGroup>
-                        </Col>
-                      </Row>
-                    </Card.Body>
-                  </Card>
+  <Row>
+    <Col md={12} className="rightColAbout">
+      <Row className="g-4"> {/* Add spacing between cards */}
+        <Col md={4}> {/* Use Col for each card */}
+          <Card className="experienceCard">
+          <p className="cardTitle" style={{paddingTop:'10px', fontSize:'20px'}}>Programming Languages</p>
+
+            <Card.Body style={{display: 'flex', width: '100%' }}>
+              <Row  style={{display: 'flex', width: '100%' }}>
+
+                <Col md={6}>
+                  <p className="cardTitle">Proficient</p>
+                  <ListGroup className="list-group" style={{marginLeft:"30%" }}>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> C++
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> C
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> Java
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> JavaScript
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> Python
+                    </ListGroup.Item>
+                  </ListGroup>
                 </Col>
-                <Col md={3}>
-                  <Card className="experienceCard">
-                    <Card.Body>
-                      <Card.Title className="cardTitle">Development Tools</Card.Title>
-                      <Row>
-                        <ListGroup className="list-group">
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Bootstrap
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> React.js
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Express.js
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Mocha
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Jest
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> GitHub
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Microsoft Azure
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> MySQL
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Unreal Engine
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Unity
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Visual Studio Code
-                          </ListGroup.Item>
-                        </ListGroup>
-                      </Row>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card className="experienceCard">
-                    <Card.Body>
-                      <Card.Title className="cardTitle">Academic Courses</Card.Title>
-                      <Row>
-                        <ListGroup className="list-group">
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Data Structures and Algorithms I & II
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Object Oriented Programming
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> AI for Game Development
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Web Development
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Virtual Reality Engineering
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> Security in Computing
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <PiSealCheckFill size={24} /> System Software
-                          </ListGroup.Item>
-                        </ListGroup>
-                      </Row>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col md={3}>
-                  <Card className="experienceCard">
-                    <Card.Body>
-                      <Card.Title className="cardTitle">Currently Working on</Card.Title>
-                      <Row>
-                        <ListGroup className="list-group">
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <AiFillPlusSquare size={24} /> Python
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <AiFillPlusSquare size={24} /> AI & Machine Learning
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <AiFillPlusSquare size={24} /> Robotic Vision
-                          </ListGroup.Item>
-                          <ListGroup.Item className="list-group-item-no-border">
-                            <AiFillPlusSquare size={24} /> Senior Design Project (Capstone)
-                          </ListGroup.Item>
-                        </ListGroup>
-                      </Row>
-                    </Card.Body>
-                  </Card>
+                <Col md={6}>
+                  <p className="cardTitle">Intermediate</p>
+                  <ListGroup className="list-group" style={{marginLeft:"30%" }}>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> C#
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> HTML
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> CSS
+                    </ListGroup.Item>
+                    <ListGroup.Item className="list-group-item-no-border">
+                      <PiSealCheckFill size={24} /> SQL
+                    </ListGroup.Item>
+                  </ListGroup>
                 </Col>
               </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card className="experienceCard">
+            <Card.Body>
+              <Card.Title className="cardTitle">Development Tools</Card.Title>
               <Row>
+                <ListGroup className="list-group">
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Bootstrap
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> React.js
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Express.js
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Mocha
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Jest
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> GitHub
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Microsoft Azure
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> MySQL
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Unreal Engine
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Unity
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Visual Studio Code
+                  </ListGroup.Item>
+                </ListGroup>
               </Row>
-            </Col>
-          </Row>
-        </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card className="experienceCard">
+            <Card.Body>
+              <Card.Title className="cardTitle">Academic Courses</Card.Title>
+              <Row>
+                <ListGroup className="list-group">
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Data Structures and Algorithms I & II
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Object Oriented Programming
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> AI for Game Development
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Web Development
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Virtual Reality Engineering
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Security in Computing
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> System Software
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Senior Design
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Algorithms For Machine Learning
+                  </ListGroup.Item>
+                  <ListGroup.Item className="list-group-item-no-border">
+                    <PiSealCheckFill size={24} /> Robot Vision
+                  </ListGroup.Item>
+                </ListGroup>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Col>
+  </Row>
+</Row>
+
       </Row>
     </Container>
   );

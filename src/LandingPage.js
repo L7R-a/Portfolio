@@ -57,7 +57,7 @@ const LandingPage = () => {
             <h2 className="rightText">
               <span className="firstLine">Hi, my name is</span> <br />
               Diego La Rosa Giraud <br />
-              <span className="lastLine">Computer Science Student</span>
+              <span className="lastLine">UCF Computer Science Alumni</span>
               <Col>
                 <Button
                   type="button"
