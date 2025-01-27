@@ -35,42 +35,42 @@ const Projects = () => {
       name: "Network Analysis",
       image: CapstoneP, // Replace with your image path
       role: "Frontend Developer",
-      link: "portfolio#/Capstone",
+      link: "#Capstone",
       icon: <FaReact />
     },
     {
       name: "Guitar Enthusiast",
       image: GuitarP, // Replace with your image path
       role: "Full-stack Developer",
-      link: "portfolio#/GuitarEnthusiast",
+      link: "#GuitarEnthusiast",
       icon: <RiStackFill />
     },
     {
       name: "Virtual Closet",
       image: MERNP, // Replace with your image path
       role: "Full-stack Developer",
-      link: "portfolio#/VirtualVogue",
+      link: "#VirtualVogue",
       icon: <RiStackFill />
     },
     {
       name: "PantryPal",
       image: PalP, // Replace with your image path
       role: "Frontend Developer",
-      link: "portfolio#/PantryPal",
+      link: "#PantryPal",
       icon: <FaReact/>
     },
     {
       name: "Contact Manager",
       image: LAMPP, // Replace with your image path
       role: "Frontend Developer",
-      link: "portfolio#/ContactManager",
+      link: "#ContactManager",
       icon: <TiHtml5 />
     },
     {
       name: "Portfolio",
       image: ThisWebP, // Replace with your image path
       role: "Frontend Developer",
-      link: "portfolio#/PortfolioApp",
+      link: "#PortfolioApp",
       icon: <FaReact />
     },
    
@@ -81,49 +81,49 @@ const Projects = () => {
         name: "Blaster",
         image: OnlineP, // Replace with your image path
         role: "Unreal Engine Developer",
-        link: "portfolio#/OnlineMultiplayer",
+        link: "#OnlineMultiplayer",
         icon: <SiUnrealengine />
       },
       {
         name: "Magic Gears",
         image: RPGP, // Replace with your image path
         role: "Unity Developer",
-        link: "portfolio#/RPG",
+        link: "#RPG",
         icon: <FaUnity />
       },
       {
         name: "Sun Striker",
         image: GameJamP, // Replace with your image path
         role: "Unity Developer",
-        link: "portfolio#/GameJam",
+        link: "#GameJam",
         icon: <FaUnity />
       },
       {
         name: "Virtual Reality",
         image: VRP, // Replace with your image path
         role: "VR Developer",
-        link: "portfolio#/VRProjects",
+        link: "#VRProjects",
         icon: <FaUnity />
       },
       {
         name: "Belica",
         image: SinglePlayerP, // Replace with your image path
         role: "Unreal Engine Developer",
-        link: "portfolio#/SinglePlayerShooter",
+        link: "#SinglePlayerShooter",
         icon: <SiUnrealengine />
       },
       {
         name: "Tanks",
         image: TankP, // Replace with your image path
         role: "Unreal Engine Developer",
-        link: "portfolio#/Tanks",
+        link: "#Tanks",
         icon: <SiUnrealengine />
       },
       {
         name: "Bulls Cows",
         image: FirstGameP, // Replace with your image path
         role: "Unreal Engine Developer",
-        link: "portfolio#/WordGame",
+        link: "#WordGame",
         icon: <SiUnrealengine />
       }
   ];
@@ -133,28 +133,28 @@ const Projects = () => {
       name: "College Schedule Management System",
       image: ScheduleP, 
       role: "Java Developer",
-      link: "portfolio#/Schedules",
+      link: "#Schedules",
       icon: <FaJava />
     },
     {
       name: "Kruskal Algorithm",
       image: GraphP,
       role: "Java Developer",
-      link: "portfolio#/GraphProblem",
+      link: "#GraphProblem",
       icon: <FaJava />
     },
     {
       name: "Backtracking Algorithm",
       image: BKP,
       role: "Java Developer",
-      link: "portfolio#/Backtracking",
+      link: "#Backtracking",
       icon: <FaJava />
     },
     {
       name: "Tiny Harvard Virtual Machine",
       image: VMP, 
       role: "C Developer",
-      link: "portfolio#/VM",
+      link: "#VM",
       icon: <FaMicrochip />
     }
   ];
