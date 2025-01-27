@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d989afc4.css",
-    "main.js": "/portfolio/static/js/main.c3293fb1.js",
+    "main.css": "/portfolio/static/css/main.30687fe1.css",
+    "main.js": "/portfolio/static/js/main.b6130948.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/singlePlayerPic.png": "/portfolio/static/media/singlePlayerPic.40411f6ae0925e9cde2e.png",
     "static/media/onlinepic.png": "/portfolio/static/media/onlinepic.1d0751e4c53e5aa54a97.png",
-    "static/media/GameP.png": "/portfolio/static/media/GameP.1e58ab51b31dab63c184.png",
     "static/media/AboutPic.jpg": "/portfolio/static/media/AboutPic.d03d4b1a68e62e369981.jpg",
     "static/media/VRP.png": "/portfolio/static/media/VRP.f01973fef826337015ae.png",
     "static/media/Picture1.png": "/portfolio/static/media/Picture1.eff1039a313d33b49ebb.png",
@@ -18,19 +17,25 @@
     "static/media/MazePic.png": "/portfolio/static/media/MazePic.81401b282ca4962dbf87.png",
     "static/media/VMPic.png": "/portfolio/static/media/VMPic.ee6aa4368a98c511171d.png",
     "static/media/VVPic.png": "/portfolio/static/media/VVPic.64e2de297c6392e8a05e.png",
+    "static/media/InterVariable-Italic.woff2": "/portfolio/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
     "static/media/RailroadsPic.png": "/portfolio/static/media/RailroadsPic.b333315b9012a3c26b70.png",
+    "static/media/InterVariable.woff2": "/portfolio/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
+    "static/media/primeicons.svg": "/portfolio/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/SchedulesPic.png": "/portfolio/static/media/SchedulesPic.97cb7ec7f298cc058e4f.png",
-    "static/media/OtherP.png": "/portfolio/static/media/OtherP.1b602d8a8ca57cbb1c7b.png",
+    "static/media/primeicons.eot": "/portfolio/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
+    "static/media/primeicons.woff": "/portfolio/static/media/primeicons.8931fda1930c3bd21e96.woff",
+    "static/media/primeicons.ttf": "/portfolio/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
     "static/media/GuitarP.png": "/portfolio/static/media/GuitarP.75cba629947487d0718f.png",
     "static/media/gameJamPic.png": "/portfolio/static/media/gameJamPic.c54890f352e1f757b669.png",
-    "static/media/WebsiteP.png": "/portfolio/static/media/WebsiteP.bf4e5e85e9fc1542fa72.png",
+    "static/media/primeicons.woff2": "/portfolio/static/media/primeicons.024b32cc7bf399b1a847.woff2",
+    "static/media/PalPic.png": "/portfolio/static/media/PalPic.f31a3f3f01195a73cd32.png",
     "index.html": "/portfolio/index.html",
-    "main.d989afc4.css.map": "/portfolio/static/css/main.d989afc4.css.map",
-    "main.c3293fb1.js.map": "/portfolio/static/js/main.c3293fb1.js.map",
+    "main.30687fe1.css.map": "/portfolio/static/css/main.30687fe1.css.map",
+    "main.b6130948.js.map": "/portfolio/static/js/main.b6130948.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d989afc4.css",
-    "static/js/main.c3293fb1.js"
+    "static/css/main.30687fe1.css",
+    "static/js/main.b6130948.js"
   ]
 }
