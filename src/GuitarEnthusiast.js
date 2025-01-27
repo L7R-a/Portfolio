@@ -83,6 +83,7 @@ const OnlineMultiplayer = () => {
         }
       ]}
       showKnownBugs = {false}
+      websiteLink="https://white-desert-019157d0f.5.azurestaticapps.net/"
     />
   );
 };

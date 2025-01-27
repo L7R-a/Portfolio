@@ -1,26 +1,87 @@
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Row,
-  Col,
-  Card,
-  ListGroup
-} from "react-bootstrap";
-import { PiSealCheckFill } from "react-icons/pi";
-import { AiFillPlusSquare } from "react-icons/ai";
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
+import { DataTable } from "primereact/datatable";
+import { Column } from "primereact/column";
+import { Link } from "react-router-dom";
 import "./About.css";
 import "./Experience.css";
-import { Link } from 'react-router-dom';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
 
 const Experience = () => {
+  const data = [
+    {
+      programmingLanguages: "C++",
+      developmentTools: "Bootstrap",
+      roleExperience: "Frontend Engineer (1 year)",
+      academicCourses: "Data Structures and Algorithms I & II",
+    },
+    {
+      programmingLanguages: "C",
+      developmentTools: "React.js",
+      roleExperience: "Full Stack Developer (0.5 years)",
+      academicCourses: "Object Oriented Programming",
+    },
+    {
+      programmingLanguages: "Java",
+      developmentTools: "Express.js",
+      roleExperience: "Game Developer (3 years)",
+      academicCourses: "AI for Game Development",
+    },
+    {
+      programmingLanguages: "JavaScript",
+      developmentTools: "Mocha",
+      roleExperience: "Project Manager (1 year)",
+      academicCourses: "Web Development",
+    },
+    {
+      programmingLanguages: "Python",
+      developmentTools: "Jest",
+      roleExperience: "",
+      academicCourses: "Virtual Reality Engineering",
+    },
+    {
+      programmingLanguages: "C#",
+      developmentTools: "GitHub",
+      roleExperience: "",
+      academicCourses: "Security in Computing",
+    },
+    {
+      programmingLanguages: "HTML",
+      developmentTools: "Microsoft Azure",
+      roleExperience: "",
+      academicCourses: "System Software",
+    },
+    {
+      programmingLanguages: "CSS",
+      developmentTools: "MySQL",
+      roleExperience: "",
+      academicCourses: "Senior Design",
+    },
+    {
+      programmingLanguages: "SQL",
+      developmentTools: "Unreal Engine",
+      roleExperience: "",
+      academicCourses: "Algorithms For Machine Learning",
+    },
+    {
+      programmingLanguages: "",
+      developmentTools: "Unity",
+      roleExperience: "",
+      academicCourses: "Robot Vision",
+    },
+    {
+      programmingLanguages: "",
+      developmentTools: "Visual Studio Code",
+      roleExperience: "",
+      academicCourses: "Mobile Device Software Development",
+    },
+  ];
+
   return (
     <Container fluid className="main-container">
       <Row>
         <Navbar id="myNavbar" bg="light" expand="lg" className="w-100">
-          <Nav>
-          </Nav>
           <Navbar.Brand as={Link} to="/" className="brand-margin py-0">
             Diego La Rosa Giraud
           </Navbar.Brand>
@@ -36,155 +97,19 @@ const Experience = () => {
           </Navbar.Collapse>
         </Navbar>
       </Row>
-      <Row className="justify-content-md-center" style={{ height: "100%" }}>
-        <Row className="TopAbout">
-          <h2 className="TopText">
-            <span className="firstLineAbout">Take a Look at</span> <br />
-            <span className="secondLineAbout">My Experience</span>
-          </h2>
+      <Row className="justify-content-md-center mt-4">
+        <span className="firstLineAbout text-center">Take a Look at</span> <br />
+        <h2 className="text-center mb-4">My Experience</h2>
+        <Row>
+          <Col md={12} style={{ padding: "0 15%"}}>
+            <DataTable showGridlines value={data} responsiveLayout="scroll"  size="large"  style={{ width: "100%", border: "3px solid #e0e0e0", borderRadius: "10px"  }} className="p-datatable-sm">
+              <Column field="roleExperience" header="Role Experience" bodyStyle={{ textAlign: 'center' }} alignHeader={"center"}></Column>
+              <Column field="programmingLanguages" header="Programming Languages"  bodyStyle={{ textAlign: 'center' }}  alignHeader={"center"}          ></Column>
+              <Column field="developmentTools" header="Development Tools" bodyStyle={{ textAlign: 'center' }}     alignHeader={"center"}              ></Column>
+              <Column field="academicCourses" header="Academic Coursework" bodyStyle={{ textAlign: 'center' }} alignHeader={"center"}></Column>
+            </DataTable>
+          </Col>
         </Row>
-        <Row className="BottomAbout">
-  <Row>
-    <Col md={12} className="rightColAbout">
-      <Row className="g-4"> {/* Add spacing between cards */}
-        <Col md={4}> {/* Use Col for each card */}
-          <Card className="experienceCard">
-          <p className="cardTitle" style={{paddingTop:'10px', fontSize:'20px'}}>Programming Languages</p>
-
-            <Card.Body style={{display: 'flex', width: '100%' }}>
-              <Row  style={{display: 'flex', width: '100%' }}>
-
-                <Col md={6}>
-                  <p className="cardTitle">Proficient</p>
-                  <ListGroup className="list-group" style={{marginLeft:"30%" }}>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> C++
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> C
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> Java
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> JavaScript
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> Python
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Col>
-                <Col md={6}>
-                  <p className="cardTitle">Intermediate</p>
-                  <ListGroup className="list-group" style={{marginLeft:"30%" }}>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> C#
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> HTML
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> CSS
-                    </ListGroup.Item>
-                    <ListGroup.Item className="list-group-item-no-border">
-                      <PiSealCheckFill size={24} /> SQL
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card className="experienceCard">
-            <Card.Body>
-              <Card.Title className="cardTitle">Development Tools</Card.Title>
-              <Row>
-                <ListGroup className="list-group">
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Bootstrap
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> React.js
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Express.js
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Mocha
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Jest
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> GitHub
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Microsoft Azure
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> MySQL
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Unreal Engine
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Unity
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Visual Studio Code
-                  </ListGroup.Item>
-                </ListGroup>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card className="experienceCard">
-            <Card.Body>
-              <Card.Title className="cardTitle">Academic Courses</Card.Title>
-              <Row>
-                <ListGroup className="list-group">
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Data Structures and Algorithms I & II
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Object Oriented Programming
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> AI for Game Development
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Web Development
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Virtual Reality Engineering
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Security in Computing
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> System Software
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Senior Design
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Algorithms For Machine Learning
-                  </ListGroup.Item>
-                  <ListGroup.Item className="list-group-item-no-border">
-                    <PiSealCheckFill size={24} /> Robot Vision
-                  </ListGroup.Item>
-                </ListGroup>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Col>
-  </Row>
-</Row>
-
       </Row>
     </Container>
   );

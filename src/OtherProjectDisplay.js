@@ -1,26 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   Nav,
   Container,
   Row,
   Col,
-  Card,
-  Button,
-  Image,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Projects.css";
+import { TabView, TabPanel } from "primereact/tabview";
 import { FaGithub } from "react-icons/fa";
+import "./Projects.css";
+import { MdOutlineWeb } from "react-icons/md";
 
 const OtherProjectDisplay = ({
   title,
   subtitle,
   githubLink,
+  websiteLink, // Optional website link
   storyText,
   challenges,
   learningText,
 }) => {
+  const [activeIndex, setActiveIndex] = useState(0); // Track active tab index
+
+  const handleTabChange = (e) => {
+    if (e.index === 3 && githubLink) {
+      // If the GitHub tab is clicked, open the link in a new tab
+      window.open(githubLink, "_blank", "noopener,noreferrer");
+    } else if (e.index === 4 && websiteLink) {
+      // If the Website tab is clicked, open the link in a new tab
+      window.open(websiteLink, "_blank", "noopener,noreferrer");
+    } else {
+      // Update the active index for other tabs
+      setActiveIndex(e.index);
+    }
+  };
+
   return (
     <Container fluid className="main-container">
       <Row>
@@ -46,55 +61,56 @@ const OtherProjectDisplay = ({
           <h2 className="TopText">
             <span className="firstLineAbout">{title}</span> <br />
             <span className="secondLineAbout">{subtitle}</span><br />
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <FaGithub className="landingIcon" size={48} />
-            </a>
           </h2>
         </Row>
         <Row className="BottomAbout">
-          <Row>
-            <Col md={4}>
-              <Card className="projectCardDescription">
-                <Card.Body>
-                  <Card.Title className="text-center">The Story</Card.Title>
-                  <Row className="scrollable-row">
-                    {storyText.map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="projectCardDescription">
-                <Card.Body>
-                  <Card.Title className="text-center">The Challenges & Solutions</Card.Title>
-                  <Row className="scrollable-row">
-                    {challenges.map((item, index) => (
-                      <ul key={index}>
-                        <strong>Challenge:</strong> {item.challenge}
-                        <br />
-                        <br />
-                        <strong>Solution:</strong> {item.solution}
+          <Col md={12} className="scrollable-column-other">
+            <TabView activeIndex={activeIndex} onTabChange={handleTabChange} scrollable>
+              <TabPanel header="Story" rightIcon="pi pi-book ml-2">
+                <div className="scrollable-content">
+                  {storyText.map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </div>
+              </TabPanel>
+              <TabPanel header="Learning Outcome" rightIcon="pi pi-check-circle ml-2">
+                <div className="scrollable-content">
+                  {learningText.map((line, index) => (
+                    <p key={index}>{line}</p>
+                  ))}
+                </div>
+              </TabPanel>
+              <TabPanel header="Challenges & Solutions" rightIcon="pi pi-exclamation-circle ml-2">
+                <div className="scrollable-content">
+                  {challenges.map((item, index) => (
+                    <div key={index} className="mb-3">
+<strong>{item.title}</strong>
+                      <ul>
+                        <li>
+                          <strong>Challenge:</strong> {item.challenge}
+                        </li>
+                        <li>
+                          <strong>Solution:</strong> {item.solution}
+                        </li>
                       </ul>
-                    ))}
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="projectCardDescription">
-                <Card.Body>
-                  <Card.Title className="text-center">The Learning Outcome</Card.Title>
-                  <Row className="scrollable-row">
-                    {learningText.map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+                    </div>
+                  ))}
+                </div>
+              </TabPanel>
+              <TabPanel header="GitHub" rightIcon="pi pi-github ml-2">
+                <div className="scrollable-content">
+                  Clicking this tab will open the GitHub link in a new tab.
+                </div>
+              </TabPanel>
+              {websiteLink && (
+                <TabPanel header="Website" rightIcon={<MdOutlineWeb  className="ml-2" />}>
+                  <div className="scrollable-content">
+                    Clicking this tab will open the website link in a new tab.
+                  </div>
+                </TabPanel>
+              )}
+            </TabView>
+          </Col>
         </Row>
       </Row>
     </Container>

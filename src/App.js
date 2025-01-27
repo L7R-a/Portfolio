@@ -25,6 +25,7 @@ import Contact from "./Contact";
 import Capstone from "./Capstone";
 import './App.css';
 import Guitar from "./GuitarEnthusiast";
+import Pal from "./PantryPal";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route path="/VM" element={<VM />} />
         <Route path="/Schedules" element={<Schedules />} />
         <Route path="/GuitarEnthusiast" element={<Guitar />} />
+        <Route path="/PantryPal" element={<Pal />} />
       </Routes>
     </Router>
   );

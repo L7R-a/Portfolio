@@ -47,7 +47,7 @@ const Contact = () => {
           <Card.Body>
             <Row className="contactRow">
               <Col md={8} className="contactCol">
-                <div className="d-flex align-items-center hover-effect">
+                <div className="d-flex align-items-center hover-effect mt-3 ml-8">
                   <a href="mailto:diegolag2003@gmail.com" target="_blank" rel="noopener noreferrer" className="no-underline d-flex align-items-center">
                     <IoIosMail className="landingIcon" size={48} />
                     <h4 className="contactTextEmail">
@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
               </Col>
               <Col md={4} className="contactCol">
-                <div className="d-flex align-items-center hover-effect">
+                <div className="d-flex align-items-center hover-effect mt-3 mr-8">
                   <a href="https://www.linkedin.com/in/diego-la-rosa/" target="_blank" rel="noopener noreferrer" className="no-underline d-flex align-items-center">
                     <FaLinkedin className="landingIcon" size={32} />
                     <h4 className="contactText">
@@ -73,7 +73,7 @@ const Contact = () => {
       <Row className="justify-content-md-center" style={{ height: "10%" }}>
         <Row className="TopAbout">
           <h2 className="TopText">
-            <span className="firstLineAbout">Copyright &copy; 2024 Diego La Rosa Giraud. All Rights Reserved.</span> <br />
+            <span className="firstLineAbout">Copyright &copy; 2025 Diego La Rosa Giraud. All Rights Reserved.</span> <br />
           </h2>
         </Row>
       </Row>

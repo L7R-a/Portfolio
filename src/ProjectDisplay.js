@@ -1,39 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   Nav,
   Container,
   Row,
   Col,
-  Card,
   Button,
-  ListGroup,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { PiSealCheckFill } from "react-icons/pi";
+import { TabView, TabPanel } from "primereact/tabview";
 import "./Projects.css";
+import { FaBug } from "react-icons/fa";
+import { MdOutlineWeb } from "react-icons/md";
 
-const ProjectDisplay = ({ 
-  title, 
-  subtitle, 
-  videoSrc, 
-  githubLink, 
-  downloadLink, 
-  storyText, 
-  challenges, 
-  learningText,   
-  showGitHubButton = true, 
-  showKnownBugs = false, 
-  knownBugs 
+
+const ProjectDisplay = ({
+  title,
+  subtitle,
+  videoSrc,
+  githubLink,
+  downloadLink,
+  websiteLink,
+  storyText,
+  challenges,
+  learningText,
+  showGitHubButton = true,
+  showKnownBugs = false,
+  knownBugs,
 }) => {
-  
-  const goToGitHub = () => {
-    window.open(githubLink, '_blank');
-  }
+  const [activeIndex, setActiveIndex] = useState(0); // Track active tab index
 
-  const goToDownload = () => {
-    window.open(downloadLink, '_blank');
-  }
+  const handleTabChange = (e) => {
+    // Handle custom behavior for specific tabs
+    if (e.index === 4 && githubLink) {
+      window.open(githubLink, "_blank", "noopener,noreferrer");
+    } else if (e.index === 5 && downloadLink) {
+      window.open(downloadLink, "_blank", "noopener,noreferrer");
+    } else if (e.index === 6 && websiteLink) {
+      window.open(websiteLink, "_blank", "noopener,noreferrer");
+    } else {
+      setActiveIndex(e.index); // Update active tab index for other tabs
+    }
+  };
 
   return (
     <Container fluid className="main-container">
@@ -64,7 +72,7 @@ const ProjectDisplay = ({
         </Row>
         <Row className="BottomAbout">
           <Col md={6}>
-            <Row className="mb-3 justify-content-center videoRow">
+            <Row className="mb-8 justify-content-center videoRow">
               <div className="video-container">
                 <iframe
                   width="560"
@@ -77,122 +85,56 @@ const ProjectDisplay = ({
                 ></iframe>
               </div>
             </Row>
-            <Row>
-              <div className="d-flex justify-content-around">
-                { downloadLink && (
-                  <Button
-                    type="button"
-                    className="landingButton"
-                    background="true"
-                    size="lg"
-                    onClick={goToDownload}
-                  >
-                    Download
-                  </Button>
-                )}
-                {showGitHubButton && (
-                  <Button 
-                    type="button" 
-                    className="landingButton" 
-                    background="true" 
-                    size="lg" 
-                    onClick={goToGitHub}
-                  >
-                    GitHub
-                  </Button>
-                )}                
-              </div>
-            </Row>
           </Col>
           <Col md={6} className="scrollable-column">
-            <Row className="mb-3 justify-content-center">
-              <Card className="projectCardDescription">
-                <Card.Body>
-                  <Card.Title className="cardTitle">The Story</Card.Title>
-                  <Row>
-                    {storyText.map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
-                 </Row>
-                </Card.Body>
-              </Card>
-              <Card className="projectCardDescription">
-                <Card.Body>
-                  <Card.Title className="cardTitle">The Learning Outcome</Card.Title>
-                  <Row>
-                    <ListGroup className="list-group">
-                      {learningText.map((item, index) => (
-                        <ListGroup.Item key={index} className="list-group-item-no-border">
-                          <Row>
-                            <Col md={1}>
-                              <PiSealCheckFill size={24} />
-                            </Col>
-                            <Col md={11}>
-                              <strong>{item.title}</strong>
-                              <ul>
-                                {item.details.map((detail, idx) => (
-                                  <li key={idx}>{detail}</li>
-                                ))}
-                              </ul>
-                            </Col>
-                          </Row>
-                        </ListGroup.Item>
+            <TabView activeIndex={activeIndex} onTabChange={handleTabChange} scrollable>
+              <TabPanel header="Story"  rightIcon="pi pi-book ml-2">
+                {storyText.map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </TabPanel>
+              <TabPanel header="Learning Outcome" rightIcon="pi pi-check-circle ml-2">
+                {learningText.map((item, index) => (
+                  <div key={index} className="mb-3">
+                    <strong>{item.title}</strong>
+                    <ul>
+                      {item.details.map((detail, idx) => (
+                        <li key={idx}>{detail}</li>
                       ))}
-                    </ListGroup>
-                  </Row>
-                </Card.Body>
-              </Card>
+                    </ul>
+                  </div>
+                ))}
+              </TabPanel>
               {challenges && (
-                <Card className="projectCardDescription">
-                  <Card.Body>
-                    <Card.Title className="cardTitle">The Challenges & Solutions</Card.Title>
-                    <Row>
-                      <ListGroup className="list-group">
-                        {challenges.map((item, index) => (
-                          <ListGroup.Item key={index} className="list-group-item-no-border">
-                            <Row>
-                              <Col md={1}>
-                                <PiSealCheckFill size={24} />
-                              </Col>
-                              <Col md={11}>
-                                <strong>{item.title}</strong>
-                                <ul>
-                                  <li>
-                                    <strong>Challenge:</strong> {item.challenge}
-                                  </li>
-                                  <li>
-                                    <strong>Solution:</strong> {item.solution}
-                                  </li>
-                                </ul>
-                              </Col>
-                            </Row>
-                          </ListGroup.Item>
-                        ))}
-                      </ListGroup>
-                    </Row>
-                  </Card.Body>
-                </Card>
+                <TabPanel header="Challenges & Solutions" rightIcon="pi pi-exclamation-circle ml-2">
+                  {challenges.map((item, index) => (
+                    <div key={index} className="mb-3">
+                      <strong>{item.title}</strong>
+                      <ul>
+                        <li>
+                          <strong>Challenge:</strong> {item.challenge}
+                        </li>
+                        <li>
+                          <strong>Solution:</strong> {item.solution}
+                        </li>
+                      </ul>
+                    </div>
+                  ))}
+                </TabPanel>
               )}
               {showKnownBugs && (
-                <Card className="projectCardDescription">
-                  <Card.Body>
-                    <Card.Title className="cardTitle">Known Bugs</Card.Title>
-                    <Row>
-                      <ListGroup className="list-group">
-                        {knownBugs.map((bug, index) => (
-                          <ListGroup.Item key={index} className="list-group-item-no-border">
-                            <Row>
-                              <Col md={1}> {index + 1}.</Col>
-                              <Col md={11}> {bug} </Col>
-                            </Row> 
-                          </ListGroup.Item>
-                        ))}
-                      </ListGroup>
-                    </Row>
-                  </Card.Body>
-                </Card>
+                <TabPanel header="Known Bugs" rightIcon={<FaBug className="ml-2" />}>
+                  <ul>
+                    {knownBugs.map((bug, index) => (
+                      <li key={index}>{bug}</li>
+                    ))}
+                  </ul>
+                </TabPanel>
               )}
-            </Row>
+              {githubLink && <TabPanel header="GitHub" rightIcon="pi pi-github ml-2"/>}
+              {downloadLink && <TabPanel header="Download" rightIcon="pi pi-arrow-circle-down ml-2" />}
+              {websiteLink && <TabPanel header="Website" rightIcon={<MdOutlineWeb  className="ml-2" />}/>}
+            </TabView>
           </Col>
         </Row>
       </Row>

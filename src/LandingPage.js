@@ -14,7 +14,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Formal from "./Images/Picture1.png";
 import { Link, useNavigate } from 'react-router-dom';
+import { Menubar } from 'primereact/menubar';
+// import "primereact/resources/themes/saga-blue/theme.css"; // Or any other theme
+// import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
+import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
 
+import "primeicons/primeicons.css"; // Icons
+import "primeflex/primeflex.css";
+
+// Accordion | Tabview
+// Dataview
 const LandingPage = () => {
   const navigate = useNavigate();
 
@@ -22,11 +31,15 @@ const LandingPage = () => {
     navigate('/Contact');
   };
 
+  
   return (
+    
     <Container fluid className="main-container">
-      <Row>
+ <Row>
         <Navbar id="myNavbar" bg="light" expand="lg" className="w-100">
-          <Navbar.Brand className="brand-margin py-0">
+          <Nav>
+          </Nav>
+          <Navbar.Brand as={Link} to="/" className="brand-margin py-0">
             Diego La Rosa Giraud
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -58,6 +71,9 @@ const LandingPage = () => {
               <span className="firstLine">Hi, my name is</span> <br />
               Diego La Rosa Giraud <br />
               <span className="lastLine">UCF Computer Science Alumni</span>
+              <br />
+              <span className="lastLine">Software Engineer</span>
+
               <Col>
                 <Button
                   type="button"

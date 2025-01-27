@@ -97,6 +97,7 @@ const Capstone = () => {
         },
       ]}
       showKnownBugs = {false}
+      websiteLink = "https://chdr.cs.ucf.edu/REPRINT/"
     />
   );
 };

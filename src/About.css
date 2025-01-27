@@ -40,12 +40,12 @@
 }
 
 .aboutCards {
-    border: 2px solid #CCA43B !important;
+    border: 2px solid #363636 !important;
     text-align: center;
     border-radius: 30px;
-    border-color: #CCA43B !important;
+    border-color: #363636 !important;
     border-width: 2px;
-    border-bottom: 2px solid #CCA43B !important;
+    border-bottom: 2px solid #363636 !important;
   }
 
 .aboutMeInfo{

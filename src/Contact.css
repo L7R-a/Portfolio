@@ -1,11 +1,11 @@
 .contactCard {
     height: 15%;
     width: 50%;
-    border: 2px solid #CCA43B !important;
+    border: 2px solid #363636 !important;
     border-radius: 30px;
-    border-color: #CCA43B !important;
+    border-color: #363636 !important;
     border-width: 2px;
-    border-bottom: 2px solid #CCA43B !important;
+    border-bottom: 2px solid #363636 !important;
     margin-bottom: 100px;
   }
   
@@ -29,17 +29,17 @@
   .contactText{
     margin-left: 5px;
     margin-top: 8px;
-    color:black;
+    color:#363636;
   }
 
   .contactTextEmail{
     margin-left: 8px;
     margin-top: 8px;
-    color:black;
+    color:#363636;
   }
 
   .hover-effect:hover .landingIcon, 
   .hover-effect:hover .contactText,
   .hover-effect:hover .contactTextEmail{
-    color:#CCA43B; /* new color on hover */
+    color:#a7a3a3; /* new color on hover */
   }
